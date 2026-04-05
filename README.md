@@ -1,77 +1,120 @@
-Crime Data Dashboard (R Shiny Project)
+# Crime Data Dashboard
 
-About this project
+Crime Data Dashboard is an R Shiny-based interactive data visualization system used to explore and analyze crime statistics through charts, tables, and maps. The application allows users to select states and crime categories to understand patterns in crime data easily.
 
-This project is a simple dashboard made using R Shiny to visualize crime data.
-The idea behind this project was to make crime statistics easier to understand using graphs, tables and maps instead of raw data files.
 
-Users can select a state and crime type and the dashboard updates automatically to show the analysis.
 
-This project was mainly created for learning purposes and to understand how interactive dashboards work in R.
-_____________________________________________________________________________________________________________________________________________
-What this project does
-Shows crime data in graphical form
-Allows state-wise analysis
-Allows filtering by crime type
-Displays interactive charts and tables
-Helps understand trends in data easily
+## Problem Statement
 
-Instead of reading Excel sheets, users can explore the data visually.
-_____________________________________________________________________________________________________________________________________________
-Who can use this
+The aim of this mini project is to build an interactive dashboard that converts raw crime data into meaningful visual insights. Instead of manually analyzing Excel files, users can explore crime statistics dynamically using filters and visualizations.
 
-Anyone can run this project.
+The system helps users understand crime trends through graphical representation and interactive analysis.
 
-Even if you are new to R, just follow the steps below carefully and it should work.
 
-This project is suitable for:
 
-students
-beginners learning R
-basic data analysis practice
-academic demonstration
-_____________________________________________________________________________________________________________________________________________
-Requirements
+## Technologies Used
 
-You only need two things installed:
+According to the project requirements, this project uses:
 
-1. R
+- Programming Language: `R`
+- Framework: `Shiny`
+- Data Source: `Excel Dataset (.xlsx)`
 
-Download from:
-https://cran.r-project.org
 
-Install normally.
 
-2. RStudio
+## Tech Stack
 
-Download from:
-https://posit.co/download/rstudio-desktop/
+- R
+- Shiny
+- shinydashboard
+- ggplot2
+- plotly
+- dplyr
+- leaflet
+- DT
+- readxl
+- sf
 
-Install it after installing R.
-_____________________________________________________________________________________________________________________________________________
-How to run the project
-Step 1 — Download the project
 
-Go to the repository:
 
-https://github.com/khushigajbhiye1485-glitch/R_crime_Data
+## Dataset Information
 
-Click Code → Download ZIP
+- Dataset Name: `Crime Against Women.xlsx`
+- Format: Excel file
+- Used for visualization and analysis inside the dashboard.
 
-Extract the folder anywhere on your computer.
-_____________________________________________________________________________________________________________________________________________
-Step 2 — Open in RStudio
 
-Open RStudio → File → Open Project
 
-Select:
+## User Interface Pages
 
+The dashboard includes multiple interactive sections:
+
+- Dashboard Overview
+- State Analysis
+- Crime Type Analysis
+- Interactive Tables
+- Map Visualization
+
+Each section updates automatically based on user selections.
+
+
+
+## Assignment Requirement Mapping
+
+This project satisfies common mini project requirements:
+
+1. Interactive User Interface  
+   - Implemented using `Shiny Dashboard`
+
+2. Backend Logic Using Programming Language  
+   - Implemented using `R`
+
+3. Data Connectivity  
+   - Excel dataset loaded using `readxl`
+
+4. Data Operations
+   - Read data: dataset loading
+   - Filter data: state and crime type selection
+   - Display data: charts, tables, and maps
+   - Dynamic updates based on user input
+
+5. Input Handling
+   - Dropdown selections for state and crime category
+
+6. Clear Problem Statement and Working Solution
+   - Crime data converted into interactive visual dashboard
+
+
+
+## How To Run The Project
+
+### 1. Open RStudio and navigate to the project folder
+
+Example:
+
+```powershell
+cd "C:\Users\HP\Downloads\R_crime_Data"
+```
+
+
+
+### 2. Open the project file
+
+Open:
+
+```
 crime dashboard.Rproj
-_____________________________________________________________________________________________________________________________________________
-Step 3 — Install packages (only first time)
+```
 
-Copy this into the Console and press Enter:
+inside RStudio.
 
+
+
+### 3. Install required packages (first time only)
+
+Run in RStudio Console:
+
+```r
 install.packages(c(
 "shiny",
 "shinydashboard",
@@ -86,49 +129,73 @@ install.packages(c(
 "sf",
 "scales"
 ))
+```
 
-Wait until installation finishes.
-_____________________________________________________________________________________________________________________________________________
-Step 4 — Run the app
+
+
+### 4. Run the application
 
 Open file:
 
+```
 app.R
+```
 
-Click Run App (top right).
+Click **Run App** in RStudio.
 
-After a few seconds, the dashboard will open in your browser.
-_____________________________________________________________________________________________________________________________________________
-How to use the dashboard
-Select a state from the dropdown.
-Choose a crime type (or select All).
-Graphs and tables will update automatically.
 
-You can try different combinations to explore the data.
-_____________________________________________________________________________________________________________________________________________
-Project files
-app.R → main dashboard code
-Crime Against Women.xlsx → dataset used
-crime dashboard.Rproj → project file for RStudio
-_____________________________________________________________________________________________________________________________________________
-Purpose of the project
 
-The goal of this project was to learn:
+### 5. Access the dashboard
 
-R Shiny application development
-data visualization
-handling real datasets
-building interactive dashboards
-_____________________________________________________________________________________________________________________________________________
-Author
+The application will automatically open in your browser:
 
-Khushi Gajbhiye
+```
+http://127.0.0.1:xxxx
+```
 
-GitHub:
+(port number may vary)
+
+
+
+## Project Features
+
+- Interactive crime data visualization
+- State-wise crime analysis
+- Crime type filtering
+- Dynamic charts and graphs
+- Interactive tables
+- Geographic map visualization
+- Easy-to-use dashboard interface
+
+
+
+## Data Operations In This Project
+
+- Create  
+  - Not applicable (read-only dataset)
+
+- Read  
+  - Load crime dataset from Excel file
+
+- Update  
+  - Dynamic filtering based on user selection
+
+- Display  
+  - Charts, tables, and maps update automatically
+
+
+## Notes
+
+- Make sure all packages are installed before running the app.
+- Keep RStudio open while the dashboard is running.
+- Press **Stop** in RStudio to close the application.
+- Dataset file must remain in the project folder.
+
+
+
+## Author
+
+Khushi Gajbhiye  
+
+GitHub:  
 https://github.com/khushigajbhiye1485-glitch
-_____________________________________________________________________________________________________________________________________________
-Note
-
-This project is created for educational purposes.
-_____________________________________________________________________________________________________________________________________________
-⭐ If you found this useful, you can star the repository.
